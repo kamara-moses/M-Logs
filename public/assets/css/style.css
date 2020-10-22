@@ -1,0 +1,46 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: lightblue;
+}
+
+.nav-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.nav-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: lightblue;
+    padding: 1rem;
+    display: block;
+}
+
+.nav-links li:hover {
+    background-color: cadetblue;
+}
