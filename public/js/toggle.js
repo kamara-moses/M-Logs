@@ -1,11 +1,10 @@
 // target icon
-const targetHam = document.querySelector('.ham-icon');
+const toggleCollapse = document.getElementsByClassName('toggle-collapse')[0]
 
 // target menu
-const targetMenu = document.querySelector('.active');
+const navLinks = document.getElementsByClassName('nav-links')[0]
 
 // event
-targetHam.onclick = (e) => {
-    e.preventDefault();
-    targetMenu.classList.toggle('active');
-};
+toggleCollapse.addEventListener('click', () => {
+    navLinks.classList.toggle('active')
+})
