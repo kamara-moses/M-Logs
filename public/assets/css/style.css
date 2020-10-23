@@ -15,8 +15,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
-    color: lightblue;
+    background-color: skyblue;
+    color: #fff;
 }
 
 .nav-title {
@@ -36,13 +36,13 @@ body {
 
 .nav-links li a {
     text-decoration: none;
-    color: lightblue;
+    color: #fff;
     padding: 1rem;
     display: block;
 }
 
 .nav-links li:hover {
-    background-color: cadetblue;
+    background-color: rgb(187, 243, 245);
 }
 
 .toggle-collapse {
@@ -88,4 +88,114 @@ body {
     .nav-links.active {
         display: flex;
     }
+}
+
+.main-content {
+    background-image: url(../img/tokeh.webp);
+    background-size: cover;
+    display: flex;
+    height: 110vh;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    /* width: 1100px; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.container .card {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 1px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover {
+    height: 420px;
+}
+
+.container .card .img-box {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+}
+
+.container .card .img-box img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container .card .content {
+    position: relative;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card .content h2 {
+    position: relative;
+    top: -15px;
+}
+
+.container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -120px;
+    transition-delay: 0.1s;
+}
+
+.footer {
+    padding: 10px;
+    clear: both;
+    font-family: cursive;
+    text-align: center;
+    background-color: skyblue;
+    color: #fff;
+    margin-top: 240px;
+    position: sticky;
+}
+
+
+/*change the styling within the <footer></footer> here*/
+
+.footer span {
+    font-size: 20px;
+}
+
+.social-icons {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons ul {
+    list-style: none;
+}
+
+.social-icons ul li {
+    display: inline-block;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.social-icons img {
+    width: 15px;
+    height: 15px;
 }
