@@ -7,15 +7,14 @@
     <title>Mlog</title>
     <link rel='stylesheet' href='./assets/css/style.css'>
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.13.0/css/all.css' integrity='sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V' crossorigin='anonymous' />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class='navbar'>
-                <div class='nav-title'>
-                    <h1>Mlog</h1>
-                </div>
+    <div class='container'>
+        <header>
+            <nav>
+                <h1><span>Salone</span>magazine</h1>
                 <a href='#' class='toggle-collapse'>
                     <span class='ham-menu '></span>
                     <span class='ham-menu '></span>
@@ -30,80 +29,103 @@
                             <a href='/'>About</a>
                         </li>
                         <li>
-                            <a href='/'>Contact</a>
+                            <a href='contact.html'>Contact</a>
                         </li>
                     </ul>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <section class='main-content'>
-        <div class='row'>
-            <div class='column'>
-                <div class='left'>
-                    <button>Blog-Post</button>
-                    <button>Map</button>
-                    <button>History</button>
-                    <button>FAQ</button>
-                </div>
-            </div>
-            <div class='column'>
-                <div class='right'>
-                    <div class='container'>
-                        <div class='card'>
-                            <div class='card-img'>
-                                <img src='./assets/img/tokeh.webp' alt='tokeh beach'>
-                            </div>
-                            <div class='content'>
-                                <h2>Tokeh Beach</h2>
-                                <p>Tokeh is one of the Freetown peninsula’s most developed beaches and one of the most popular. Its vast stretches of white sands are just a ten-minute drive by 4x4 from River Number Two, or under an hour from Freetown.</p>
-                            </div>
+            </nav>
+            <img src='./assets/img/salone.webp' alt="Freetown Sierra Leone">
+        </header>
+        <section class='main'>
+            <article class="articles">
+                <article id="salone" class="card">
+                    <h6>Q & A</h6>
+                    <div>
+                        <a href="/">
+                            <h1>Bound to Cooperate: Conflict, Peace, and People in Sierra Leone</h1>
+                        </a>
+                        <div class="icons">
+                            <h6><i class="far fa-clock"></i>12 minutes ago</h6>
+                            <h6><i class="far fa-comment"></i>20 comments</h6>
                         </div>
-
-                        <div class='card'>
-                            <div class='card-img'>
-                                <img src='./assets/img/lakka.jpg' alt='Lakka Beach'>
-                            </div>
-                            <div class='content'>
-                                <h2>Lakka Beach</h2>
-                                <p>Lakka Beach is a welcome haven of tranquillity for those escaping the city. Restaurants serving outstanding seafood are perched on the golden sands, and service from the local beach boys is impeccable.</p>
-                            </div>
-                        </div>
-
-                        <div class='card'>
-                            <div class='card-img'>
-                                <img src='./assets/img/rnt.jpg' alt='River Number Two Beach'>
-                            </div>
-                            <div class='content'>
-                                <h2>River Number Two Beach</h2>
-                                <p>River Number Two is just 30km south of Freetown. However, like most beaches on the peninsula it’s totally unspoilt. Run by a cooperative set up following the civil war, all profits go straight back into the community.</p>
-                            </div>
-                        </div>
+                        <p>This publication gives a voice to the civil society of Sierra Leone and lets it tell what it thinks is the best way to tackle the scourge of small arms proliferation.</p>
                     </div>
-                </div>
-            </div>
-        </div>
+                </article>
+                <section class='cards'>
+                    <article class='card'>
+                        <div class='card-img'>
+                            <img src='./assets/img/blog-1.png' alt='Sweet Salone'>
+                        </div>
+                        <h6>Travel</h6>
+                        <div>
+                            <a href="/">
+                                <h2>Sweet Salone</h2>
+                            </a>
+                            <div class="icons">
+                                <h6><i class="far fa-clock"></i>12 minutes ago</h6>
+                                <h6><i class="far fa-comment"></i>20 comments</h6>
+                            </div>
+                            <p>Yes, there are still some issues, but I found the Sierra Leone I visited to be beautiful, vibrant, friendly, unspoilt and full of potential. I felt very safe too.</p>
+                        </div>
+                    </article>
+                    <article class='card'>
+                        <div class='card-img'>
+                            <img src='./assets/img/lakka.jpeg' alt='Lakka Beach'>
+                        </div>
+                        <h6>Resorts</h6>
+                        <div>
+                            <a href='/'>
+                                <h2>Lakka Beach Resort</h2>
+                            </a>
+                            <div class="icons">
+                                <h6><i class="far fa-clock"></i>10 minutes ago</h6>
+                                <h6><i class="far fa-comment"></i>0 comments</h6>
+                            </div>
+                            <p>Lakka Beach Resort is a welcome haven of tranquillity for those escaping the city. Restaurants serving outstanding seafood are perched on the golden sands, and service from the local beach boys is impeccable.</p>
+                        </div>
+                    </article>
+                    <article class='card'>
+                        <div class='card-img'>
+                            <img src='./assets/img/rnt.jpg' alt='River Number Two Beach'>
+                        </div>
+                        <h6>Tourist Attraction</h6>
+                        <div>
+                            <a href='/'>
+                                <h2>River Number Two Beach</h2>
+                            </a>
+                            <div class="icons">
+                                <h6><i class="far fa-clock"></i>5 hours ago</h6>
+                                <h6><i class="far fa-comment"></i>2 comments</h6>
+                            </div>
+                            <p>River Number Two is just 30km south of Freetown. However, like most beaches on the peninsula it’s totally unspoilt. Run by a cooperative set up following the civil war, all profits go straight back into the community.</p>
+                        </div>
+                    </article>
+                    <article class='card'>
+                        <div class='card-img'>
+                            <img src='./assets/img/bunce-island.jpg' alt='Bunce Island'>
+                        </div>
+                        <h2>Monuments</h2>
+                        <div>
+                            <a href='/'>
+                                <h2>Bunce Island</h2>
+                            </a>
+                            <div class="icons">
+                                <h6><i class="far fa-clock"></i>5 hours ago</h6>
+                                <h6><i class="far fa-comment"></i>2 comments</h6>
+                            </div>
+                            <p>Bunce Island is the site of an 18th century British slave castle in the Republic of Sierra Leone in West Africa.</p>
+                        </div>
+                    </article>
+                </section>
+            </article>
+            <aside>
+                <img src="./assets/img/coa.jpeg" alt="sierra leone coat of arms">
+            </aside>
+        </section>
 
 
-    </section>
-
-    <footer class='footer'>
-        <p>
-            &copy; 2020 K, Tech.
-        </p>
-        <div class='social-icons'>
-            <ul>
-                <li><img src='./assets/img/facebook.png'></li>
-                <li><img src='./assets/img/instagram.png'></li>
-                <li><img src='./assets/img/linkedin.png'></li>
-                <li><img src='./assets/img/twitter.png'></li>
-            </ul>
-        </div>
-    </footer>
-
-
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js '></script>
-    <script src='./js/toggle.js '></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js '></script>
+        <script src='./js/toggle.js '></script>
 </body>
 
 </html>
