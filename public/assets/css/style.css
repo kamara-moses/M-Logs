@@ -23,6 +23,7 @@ h1 {
 
 .container {
     display: grid;
+    grid-column: 1fr 1fr;
     gap: 2rem;
     font-family: "Baloo Chettan 2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     color: #171927;
@@ -40,11 +41,11 @@ header nav {
     position: absolute;
     width: 100%;
     padding: 1.2rem 2.4rem;
-    color: #fff;
+    color: rgb(219, 105, 105);
 }
 
 header nav h1 {
-    color: #fff;
+    color: rgb(219, 105, 105);
 }
 
 header img {
@@ -65,13 +66,13 @@ header img {
 
 .nav-links li a {
     text-decoration: none;
-    color: #fff;
+    color: rgb(133, 60, 60);
     padding: 1rem;
     display: block;
 }
 
 .nav-links li:hover {
-    background-color: rgb(187, 243, 245);
+    background-color: rgb(255, 255, 255);
 }
 
 .toggle-collapse {
@@ -88,7 +89,7 @@ header img {
 .toggle-collapse .ham-menu {
     height: 3px;
     width: 100%;
-    background-color: lightblue;
+    background-color: rgb(133, 60, 60);
     border-radius: 10px;
 }
 
@@ -121,85 +122,26 @@ header img {
 
 .main {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
     width: 90%;
     gap: 1.5rem;
-    margin: auto;
-}
-
-.articles h6 {
-    font-size: 1rem;
-}
-
-.icons {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    line-height: 3;
-}
-
-.far {
-    padding-right: 0.3rem;
-}
-
-.main .articles {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    margin: 0 auto;
 }
 
 .main .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    grid-template-columns: 1fr;
     gap: 2rem;
-    /* background-color: #fff;
-    /* margin: 30px 10px; */
-    /* padding: 20px 1px; */
-    /* max-width: 300px; */
+    width: auto;
 }
-
-
-/* .main .cards .card-img {
-    position: relative;
-    width: 260px;
-    height: 260px;
-    top: -60px;
-    left: 20px;
-    z-index: 1;
-}
-
-.main .cards .card-img img {
-    max-width: 100%;
-    border-radius: 4px;
-    width: 260px;
-    height: 178px;
-} */
-
-
-/* .main .cards {
-    position: relative;
-    padding: 10px 15px;
-    text-align: center;
-    color: #111;
-} */
-
-
-/* .main .cards h2 {
-    position: relative;
-    top: -15px;
-    margin-top: -120px;
-    opacity: 1;
-    text-align: center;
-} */
 
 .card>* {
     margin-bottom: 0.5rem;
 }
 
 .card img {
-    width: 100%;
+    width: 300px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-    /* width: 260px; */
     height: 245px;
 }
 
@@ -210,102 +152,6 @@ header img {
 
 .cards p {
     text-align: center;
-}
-
-aside {
-    text-align: center;
-}
-
-aside img {
-    width: 80%;
-    border: 2px solid #111;
-    height: 539px;
-}
-
-
-/* Change footer styling */
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #ddd;
-    position: -webkit-sticky;
-}
-
-.footer span {
-    font-size: 20px;
-}
-
-.social-icons {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.social-icons ul {
-    list-style: none;
-}
-
-.social-icons ul li {
-    display: inline-block;
-    cursor: pointer;
-    margin: 5px;
-}
-
-.social-icons img {
-    width: 15px;
-    height: 15px;
-}
-
-
-/* *********main********* */
-
-
-/* .main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    width: 90%;
-    gap: 1.5rem;
-    margin: auto;
-} */
-
-
-/**********articles********** */
-
-
-/* .main .articles {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-}
-
-.articles h6 {
-    font-size: 1rem;
-} */
-
-
-/* *********cards********** */
-
-
-/* .main .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-}
-
-.card>* {
-    margin-bottom: 0.5rem;
-}
-
-.card img {
-    width: 100%;
-}
-
-.card p {
-    line-height: 1.8rem;
-    text-decoration: underline;
 }
 
 .card button {
@@ -335,130 +181,49 @@ aside img {
 .btn:hover {
     background: #fff;
     border: 1px solid #ddd;
-} */
-
-
-/* *********aside********** */
-
-
-/* aside {
-    text-align: center;
 }
 
-aside img {
-    width: 80%;
-} */
 
+/* Change footer styling */
 
-/* *********footer********** */
-
-
-/* footer {
+.footer {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #ddd;
-}
-
-footer .newsletter {
-    width: 50%;
-    text-align: center;
-}
-
-.newsletter>* {
-    display: flex;
-    flex-direction: column;
-}
-
-.newsletter>div {
-    margin-bottom: 1rem;
-}
-
-.newsletter p {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 0.3rem;
-    color: #6f706f;
-}
-
-.newsletter form {
-    width: 70%;
-    margin: auto;
-}
-
-.newsletter label {
-    margin-bottom: 0.5rem;
-}
-
-.newsletter input {
-    width: 100%;
-    padding: 0.3rem 0.8rem;
-    border: 1px solid #ddd;
-    font-size: inherit;
-    font-family: inherit;
-}
-
-.newsletter button {
-    padding: 0.5rem 1.5rem;
-    font-family: inherit;
-    cursor: pointer;
-    border: 1px solid #ddd;
-    background: #fff;
-}
-
-.newsletter button:hover {
-    background: #ddd;
-    border: 1px solid #fff;
-}
-
-footer .main-footer {
-    width: 90%;
-    display: flex;
+    border-top: 1px solid rgb(192, 185, 185);
+    box-shadow: inset 0 15px 5px -16px #111;
+    color: #ffffff;
+    position: relative;
+    padding: 20px;
     justify-content: space-between;
-    padding: 1rem;
 }
 
-.main-footer div:nth-child(2) {
-    align-self: center;
+.co {
+    position: absolute;
+    bottom: 0;
+    color: #000000;
 }
 
-.fab {
-    margin-left: 2rem;
-    font-size: 2em;
-    color: #6f706f;
-    cursor: pointer;
+.social-foot img {
+    padding-right: 20px;
+    width: 40px;
+    height: 40px;
 }
 
-@media (max-width: 960px) {
-    header img {
-        height: 75vh;
-    }
-    .main {
-        grid-template-columns: 1fr;
-    }
-    aside img {
-        width: 50%;
-    }
-    footer .newsletter {
-        width: 70%;
-    }
+
+/* .logo-container {
+    text-align: center;
+    margin: 0 auto;
+} */
+
+.subscribe {
+    border-radius: 10px;
+    background-color: rgb(219, 105, 105);
+    color: #fff;
+    padding: 8px;
+    border: none;
 }
 
-@media (max-width: 769px) {
-    header img {
-        height: 60vh;
-    }
+input {
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
 }
-
-@media (max-width: 600px) {
-    header img {
-        height: 50vh;
-    }
-    .main .cards {
-        grid-template-columns: 1fr;
-    }
-    .newsletter {
-        width: 100%;
-    }
-}  */
